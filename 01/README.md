@@ -6,7 +6,7 @@ It's a bit more than just a database transaction. The use of transactions isn't 
 about the use of one global/aggregate transaction to consolidate what would normally be 2 or more individal operations
 executed against the database.
 
-For example, a UserRepository is saving a user and during the same request, and OrderRepository needs to create an order.
+For example, a UserRepository is saving a User and during the same request, an OrderRepository needs to create an Order.
 Rather than saving the user and then the order, both entities are persisted as apart of the same transaction.
 
 This demo demonstrates performning 1000 individual writes, versus queuing 1000 writes in proc via SaveChanges and
