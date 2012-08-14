@@ -19,7 +19,8 @@ in the [ ASP.NET Application Lifecycle ] (http://msdn.microsoft.com/en-us/librar
 # Why IIS as Opposed to Casini? #
 
 In practice, using IIS for local development is a very good idea and highly recommended. On the job, we actually use
-Casini. In this case, I had no choice due to the fact that  the logic in PreApplicationStart relies on Integrated mode 
+Casini. In this case, I had no choice due to the fact that  the logic in [ PreApplicationStart ] (https://github.com/armw4/dubbcasts/blob/master/02/UoWApplication/PreApplicationStart.cs)
+relies on Integrated mode 
 
 # What are the Benefits? #
 
