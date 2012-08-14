@@ -9,11 +9,11 @@ executed against the database.
 For example, a UserRepository is saving a User and during the same request, an OrderRepository needs to create an Order.
 Rather than saving the User and Order individually, both entities are persisted as apart of the same transaction.
 
-This demo demonstrates performning 1000 individual writes, versus queuing 1000 writes in proc via SaveChanges and
+[ This demo ] (http://www.youtube.com/watch?v=gi4hhsazwCw) demonstrates performning 1000 individual writes, versus queuing 1000 writes in proc via SaveChanges and
 committing a single transaction. In the case of the latter, NHibernate will perform 50 writes with 20 inserts.
 This can be viewed as a 95% performance increase.
 
-# System Requirements #
+# Development Dependencies #
 
 * Visual Studio 2010+ (Exress should suffice)
 * [SQL Express 2012]: (2005/2008 should  work as well but not sure. I used 2012 in the screencast)
