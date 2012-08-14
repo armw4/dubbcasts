@@ -13,8 +13,9 @@ There are several caveats to keep in mind with such an approach; of which will b
 
 [ Autofac dynamically registers an HttpModule at runtime ] (http://code.google.com/p/autofac/source/browse/src/Source/Autofac.Integration.Mvc/PreApplicationStartCode.cs) 
 that disposes of all instances that implement IDisposable. This cleanup is done during the EndRequest event. If the session isn't commited before then,
-it'll be closed and there will be no chance to save changes. I was forced to sneak in front of Autofac by tapping in to the event prior to EndRequest 
-in the [ ASP.NET Application Lifecycle ] (http://msdn.microsoft.com/en-us/library/bb470252.aspx). This is the price you pay for convenience but I'd say it's well worth the expense.
+it'll be closed and there will be no chance to save changes. [I was forced to sneak in front of Autofac ] (https://github.com/armw4/dubbcasts/blob/master/02/UoWApplication/SessionManagementHttpModule.cs)
+by tapping in to the event prior to EndRequest in the [ ASP.NET Application Lifecycle ] (http://msdn.microsoft.com/en-us/library/bb470252.aspx). This is the price
+you pay for convenience but I'd say it's well worth the expense.
 
 # Why IIS as Opposed to Casini? #
 
