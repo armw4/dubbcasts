@@ -5,9 +5,9 @@ There are several caveats to keep in mind with such an approach; of which will b
 
 # Development Dependencies #
 
-IIS/IIS Express
-Microsoft Visual Studio 2010+
-SQL Express (preferably 2008/2012)
+* IIS/IIS Express
+* Microsoft Visual Studio 2010+
+* SQL Express (preferably 2008/2012)
 
 # Why the PostLogRequestEvent? #
 
