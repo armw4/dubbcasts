@@ -1,6 +1,6 @@
 # The Purpose #
 
-This is a demo of how to implement one transaction per request using NHibernate and Autofac.
+This is a demo of how to implement one transaction per request in an ASP.NET web application using NHibernate and Autofac.
 There are several caveats to keep in mind with such an approach; of which will be highlighted below.
 
 # Development Dependencies #
