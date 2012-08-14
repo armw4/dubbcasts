@@ -25,7 +25,7 @@ relies on Integrated mode
 
 # What are the Benefits? #
 
-Besides a noticeable performance boost as highlighted in [ episode 1 ] (http://www.youtube.com/watch?v=gi4hhsazwCw), your repositories will be a lot leaner. This approach
-alleviates the burden of session and transaction at the repo level. This is an added bonus as repos will be rid of the same
-boilerplate code that opens the session, begins the transaction, disposes of both instances in a try finally block, error logging,
-etc. This workflow all takes place at a much higher level and it's consistent for each and every request.
+Besides a noticeable performance boost as highlighted in [ episode 1 ] (http://www.youtube.com/watch?v=gi4hhsazwCw), your [ repositories ] (https://github.com/armw4/dubbcasts/blob/master/02/UoW.NHibernate/OrderRepository.cs)
+will be a lot [ leaner ] (https://github.com/armw4/dubbcasts/blob/master/02/UoW.NHibernate/UserRepository.cs). This approach alleviates the burden of session and 
+transaction at the repo level. This is an added bonus as repos will be rid of the same boilerplate code that opens the session, begins the transaction, disposes of
+both instances in a try finally block, error logging, etc. This workflow all takes place at a much higher level and is consistent for each and every request.
